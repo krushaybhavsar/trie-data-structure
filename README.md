@@ -36,7 +36,7 @@ Enter 'help' to view a full list of valid commands.
 
 Enter a command >>>
 ```
-The program should now allow you to perfrom operations on the trie. To view all operations that can be performed on the trie, enter "help".
+The program should now allow you to perfrom operations on the trie. To view all operations that can be performed on the trie, enter `help`.
 ```
 Enter a command >>> help
 Valid commands are:
@@ -50,7 +50,7 @@ Valid commands are:
 
 Enter a command >>>
 ```
-Anytime you are not in the middle of performing an operation, you have the option to enter "quit", which will terminate the program.<br/>
+Anytime you are not in the middle of performing an operation, you have the option to enter `quit`, which will terminate the program.<br/>
 To perfrom operations on the trie, first enter the name of the operation you would like to perform. Then, follow through with what the CLI asks to execute the operation.<br/>
 The snippet below shows an example of how you could insert a keyword into the trie:
 ```
@@ -73,4 +73,4 @@ coding
 
 Enter a command >>>
 ```
-If you are confused on what a certain operation does, you can enter "help" to view a brief description on the operation's purpose.
+If you are confused on what a certain operation does, you can enter `help` to view a brief description on the operation's purpose.
