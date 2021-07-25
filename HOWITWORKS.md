@@ -32,7 +32,7 @@ Below is an a guide on how to receive the data in the current global trie state:
   ```
   {"id":"words","wordList":["ape","app","apple","car","coding"]}
   ```
-If you would like to sned a PUT request using CURL, you can use the same API route. Be sure to format the body JSON similar to the following:
+If you would like to send a PUT request using CURL, you can use the same API route. Be sure to format the body JSON similar to the following:
 ```
 {
    "wordList" : ["firstWord","secondWord","thirdWord"]
