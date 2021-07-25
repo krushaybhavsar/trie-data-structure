@@ -1,0 +1,20 @@
+{
+  "name": "@krushaybhavsar/triedatastructure",
+  "version": "1.0.1",
+  "description": "",
+  "main": "CLI.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/krushaybhavsar/TrieDataStructure.git"
+  },
+  "author": "Krushay Bhavsar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/krushaybhavsar/TrieDataStructure/issues"
+  },
+  "homepage": "https://github.com/krushaybhavsar/TrieDataStructure#readme",
+  "bin": "CLI.js"
+}

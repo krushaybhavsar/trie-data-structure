@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var Trie = require("./DataStructure/Trie.js");
 const fetch = require("node-fetch");
 const prompt = require("prompt-sync")();
@@ -5,7 +7,9 @@ var t = undefined;
 
 const startCLI = async () => {
   console.log();
-  var response = prompt("Enter 'load trie' to load the trie >>> ");
+  var response = prompt(
+    "Enter 'load trie' to load the trie >>> "
+  ).toLowerCase();
   if (response === "load trie") {
     t = new Trie();
     await get(
@@ -36,7 +40,7 @@ const startCLI = async () => {
 const performOperations = async () => {
   console.log("");
 
-  var response = prompt("Enter a command >>> ");
+  var response = prompt("Enter a command >>> ").toLowerCase();
   if (response === "help") {
     console.log("Valid commands are:");
     console.log("'insert' --> inserts keyword into trie");
@@ -51,7 +55,9 @@ const performOperations = async () => {
     console.log("'display' --> lists all words present in trie");
     console.log("'quit' --> terminates program");
   } else if (response === "insert") {
-    var word = prompt("Enter a word to insert into the trie >>> ");
+    var word = prompt(
+      "Enter a word to insert into the trie >>> "
+    ).toLowerCase();
     await get(
       "https://us-central1-triedatastructure-eebc0.cloudfunctions.net/trie/words"
     )
@@ -79,7 +85,9 @@ const performOperations = async () => {
       console.log("This word has already been inserted in the trie.");
     }
   } else if (response === "delete") {
-    var word = prompt("Enter a word to delete from the trie >>> ");
+    var word = prompt(
+      "Enter a word to delete from the trie >>> "
+    ).toLowerCase();
     await get(
       "https://us-central1-triedatastructure-eebc0.cloudfunctions.net/trie/words"
     )
@@ -107,7 +115,7 @@ const performOperations = async () => {
       console.log("Word does not exist in the trie.");
     }
   } else if (response === "search") {
-    var word = prompt("Enter a word to search >>> ");
+    var word = prompt("Enter a word to search >>> ").toLowerCase();
     await get(
       "https://us-central1-triedatastructure-eebc0.cloudfunctions.net/trie/words"
     )
@@ -127,7 +135,7 @@ const performOperations = async () => {
       console.log(`The word '${word}' does not exist in the trie.`);
     }
   } else if (response === "autocomplete full") {
-    var word = prompt("Enter an input prefix >>> ");
+    var word = prompt("Enter an input prefix >>> ").toLowerCase();
     await get(
       "https://us-central1-triedatastructure-eebc0.cloudfunctions.net/trie/words"
     )
@@ -142,7 +150,7 @@ const performOperations = async () => {
       .catch((err) => console.log(err));
     t.autoComplete(word, true);
   } else if (response === "autocomplete") {
-    var word = prompt("Enter an input prefix >>> ");
+    var word = prompt("Enter an input prefix >>> ").toLowerCase();
     await get(
       "https://us-central1-triedatastructure-eebc0.cloudfunctions.net/trie/words"
     )
