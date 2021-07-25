@@ -25,7 +25,7 @@ You can enter 'quit' anytime to exit the program.
 
 Enter 'load trie' to load the trie >>>
 ```
-Enter "load trie" so that the program can send a GET request to retrieve data from a Firebase database.
+Enter `load trie` so that the program can send a GET request to retrieve data from a Firebase database.
 ```
 Enter 'load trie' to load the trie >>> load trie
 [ 'apple', 'car', 'ape', 'app' ]
